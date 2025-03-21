@@ -52,8 +52,8 @@ jobs:
 
   release:
     name: Release
-    needs: [build]
-    if: success() && startsWith(github.ref, 'refs/tags/')
+    needs: build
+    if: success()
     runs-on: ubuntu-latest
 
     steps:
