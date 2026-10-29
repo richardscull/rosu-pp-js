@@ -600,6 +600,10 @@ export class DifficultyAttributes {
    */
   readonly speedNoteCount: number | undefined;
   /**
+   * The number of notes weighted by reading difficulty. Only available for osu!.
+   */
+  readonly readingDifficultNoteCount: number | undefined;
+  /**
    * Weighted sum of aim strains.
    *
    * Only available for osu!.
@@ -687,7 +691,7 @@ export class DifficultyAttributes {
   /**
    * The difficulty of the reading skill.
    *
-   * Only available for osu!taiko.
+   * Only available for osu! and osu!taiko.
    */
   readonly reading: number | undefined;
   /**
@@ -927,6 +931,10 @@ export class PerformanceAttributes {
    */
   readonly ppSpeed: number | undefined;
   /**
+   * The reading portion of the final pp. Only available for osu!.
+   */
+  readonly ppReading: number | undefined;
+  /**
    * The accuracy portion of the final pp.
    *
    * Only available for osu! and osu!taiko.
@@ -1006,7 +1014,7 @@ export class Strains {
    */
   readonly color: Float64Array | undefined;
   /**
-   * Strain peaks of the reading skill in osu!taiko.
+   * Strain peaks of the reading skill in osu! and osu!taiko.
    */
   readonly reading: Float64Array | undefined;
   /**

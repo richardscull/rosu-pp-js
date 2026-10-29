@@ -1,5 +1,9 @@
 # rosu-pp-js
 
+This fork uses the experimental `pp-update` branch of `rosu-pp`. Calculations
+and exposed attributes may change as that branch evolves. The exact revision is
+recorded in `Cargo.lock`.
+
 Library to calculate difficulty and performance attributes for all [osu!] gamemodes.
 
 This is a js binding to the [Rust] library [rosu-pp] through [Wasm]. As such, its performance is

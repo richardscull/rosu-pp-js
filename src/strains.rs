@@ -32,7 +32,7 @@ pub struct JsStrains {
     /// Strain peaks of the color skill in osu!taiko.
     #[wasm_bindgen(readonly)]
     pub color: Option<Vec<f64>>,
-    /// Strain peaks of the reading skill in osu!taiko.
+    /// Strain peaks of the reading skill in osu! and osu!taiko.
     #[wasm_bindgen(readonly)]
     pub reading: Option<Vec<f64>>,
     /// Strain peaks of the rhythm skill in osu!taiko.
@@ -60,6 +60,7 @@ impl From<Strains> for JsStrains {
                 aim_no_sliders,
                 speed,
                 flashlight,
+                reading,
             }) => Self {
                 mode: JsGameMode::Osu,
                 section_len: OsuStrains::SECTION_LEN,
@@ -67,6 +68,7 @@ impl From<Strains> for JsStrains {
                 aim_no_sliders: Some(aim_no_sliders),
                 speed: Some(speed),
                 flashlight: Some(flashlight),
+                reading: Some(reading),
                 ..Self::default()
             },
             Strains::Taiko(TaikoStrains {
