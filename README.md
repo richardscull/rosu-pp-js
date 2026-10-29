@@ -1,6 +1,6 @@
 # rosu-pp-js
 
-This fork uses the experimental `pp-update` branch of `rosu-pp`. Calculations
+This fork uses the experimental `pp-update` branch of [richardscull/rosu-pp](https://github.com/richardscull/rosu-pp/tree/pp-update). Calculations
 and exposed attributes may change as that branch evolves. The exact revision is
 recorded in `Cargo.lock`.
 
